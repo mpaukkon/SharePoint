@@ -1,0 +1,96 @@
+@import '~@microsoft/sp-office-ui-fabric-core/dist/sass/SPFabricCore.scss';
+
+:global .icon-125
+{
+  font-size:25px;
+  color:lime;
+  font-weight: 800;
+}
+
+:global .ms-GroupHeader-title
+{
+  color: black;
+}
+
+:global   .ms-GroupHeader
+{
+  background-color:white !important;
+}
+
+[class^="ControlZoneEmphasisBackground"]{
+  background-color: rgba(0, 0, 0, 0) !important;
+  
+}
+
+.toDoWebPart {
+  .container {
+    max-width: 900px;
+    margin: 0px auto;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 25px 50px 0 rgba(0, 0, 0, 0.1);
+  }
+
+  .row {
+    @include ms-Grid-row;
+    @include ms-fontColor-white;
+    background-color:$ms-color-neutralLight;
+    padding: 5px;
+    
+  }
+
+
+  .column {
+    @include ms-Grid-col;
+    @include ms-lg6;
+    //@include ms-xl8;
+    @include ms-xlPush2;
+    @include ms-lgPush1;
+  }
+
+  .taskRow {
+    @include ms-Grid-row;
+    margin:0 auto;
+    max-width: 100%;
+    background-color:$ms-color-neutralLighter;
+    
+  }
+
+  .title {
+    @include ms-font-xl;     
+    font-weight: 400;
+     color:black;
+  }
+
+  .subTitle {
+    @include ms-font-l;
+    color: $ms-color-themePrimary;
+  }
+
+  .description {
+    @include ms-font-l;
+    @include ms-fontColor-white;
+  }
+
+  .button {
+    :global .ms-Button-icon{
+    font-size: 25px;
+    color: lime;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    }
+    
+  }
+  .bell
+    {
+      :global .ms-Button-icon{
+        font-size: 25px;
+        color: red;
+        padding-left: 15px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        }
+    }
+
+
+
+  
+}

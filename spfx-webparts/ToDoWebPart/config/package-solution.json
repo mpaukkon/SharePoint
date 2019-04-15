@@ -1,0 +1,21 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/spfx-build/package-solution.schema.json",
+  "solution": {
+    "name": "to-do-web-part-client-side-solution",
+    "id": "6e43863f-76e5-4181-bc80-bf9558574a8f",
+    "version": "1.0.0.1",
+    "includeClientSideAssets": true,
+    "skipFeatureDeployment": true,
+    "webApiPermissionRequests": [
+      {
+        "resource": "Microsoft Graph",
+        "scope": "Tasks.ReadWrite"
+      }
+    ]
+  
+
+  },
+  "paths": {
+    "zippedPackage": "solution/to-do-web-part.sppkg"
+  }
+}

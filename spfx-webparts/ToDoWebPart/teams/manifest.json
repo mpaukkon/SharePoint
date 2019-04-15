@@ -5,17 +5,17 @@
   "id": "aa3fecf0-1fd0-4751-aba1-12314dc3a22f",
   "version": "0.1",
   "developer": {
-    "name": "Parker Porcupine",
-    "websiteUrl": "https://products.office.com/en-us/sharepoint/collaboration",
-    "privacyUrl": "https://privacy.microsoft.com/en-us/privacystatement",
-    "termsOfUseUrl": "https://www.microsoft.com/en-us/servicesagreement"
+    "name": "Matti Paukkonen",
+    "websiteUrl": "https://mattipaukkonen.com",
+    "privacyUrl": "https://mattipaukkonen.com",
+    "termsOfUseUrl": "https://mattipaukkonen.com"
   },
   "name": {
     "short": "To-Do WebPart"
   },
   "description": {
-    "short": "{{SPFX_COMPONENT_SHORT_DESCRIPTION}}",
-    "full": "{{SPFX_COMPONENT_LONG_DESCRIPTION}}"
+    "short": "To-Do WebPart",
+    "full": "Web Part for displaying personal tasks from Microsoft To-Do."
   },
   "icons": {
     "outline": "57a4819d-c9bb-4dc7-a3a5-9cfa0e6d7723_outline.png",

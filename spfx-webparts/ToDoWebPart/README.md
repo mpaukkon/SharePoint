@@ -9,3 +9,11 @@ Version|Date|Comments
 -------|----|--------
 1.0|April 15, 2019|Initial release
 
+## Deployment
+* Clone this repository
+* Run 'npm install'
+* Run 'gulp bundle --ship'
+* Run 'gulp package-solution --ship'
+* Drop solution package to SharePoint App Catalog
+* Select added solution and click 'Sync to Teams' from the ribbon on App Catalog
+* Approve API permissions on API Management on SharePoint Admin Center

@@ -1,2 +1,2 @@
 # SharePoint
-SharePoint samples &amp; demos
+This repository contains samples and demos.

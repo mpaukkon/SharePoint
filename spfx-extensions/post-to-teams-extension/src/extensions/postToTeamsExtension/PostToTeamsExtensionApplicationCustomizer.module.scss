@@ -1,0 +1,22 @@
+@import '~@microsoft/sp-office-ui-fabric-core/dist/sass/SPFabricCore.scss';
+
+.row
+{
+   display:flex;
+    background-color: $ms-color-themePrimary;
+    width: 100%;
+    justify-content: center;
+    
+}
+
+.shareLink
+{
+   
+    color: white;
+    max-width: 200px;
+    text-align:center;  
+    padding: 5px 25px 5px 25px;
+    margin-top:5px;
+    margin-bottom: 15px;
+    background-color: $ms-color-themeTertiary;
+}

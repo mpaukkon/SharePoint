@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+    <CustomAction
+        Title="PostToTeamsExtension"
+        Location="ClientSideExtension.ApplicationCustomizer"
+        ClientSideComponentId="a2c70e5b-f203-4c2c-ae2b-17b627bab2dd"
+        ClientSideComponentProperties="{&quot;testMessage&quot;:&quot;Test message&quot;}">
+    </CustomAction>
+</Elements>

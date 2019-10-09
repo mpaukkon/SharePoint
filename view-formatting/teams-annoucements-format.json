@@ -1,0 +1,175 @@
+{
+    "schema": "https://developer.microsoft.com/json-schemas/sp/view-formatting.schema.json",
+    "debugMode": false,
+    "hideSelection": true,
+    "hideColumnHeader": true,
+    "rowFormatter": {
+      "elmType": "div",
+      "attributes": {
+        "class": "ms-borderColor-neutralLight"
+      },
+      "style": {
+        "flex-direction": "row",
+        "align-items": "stretch",
+        "box-sizing": "border-box",
+        "border-width": "1px",
+        "border-left-width": "4px",
+        "border-style": "solid",
+        "margin-bottom": "10px"
+      },
+      "children": [
+        {
+          "elmType": "div",
+          "style": {
+            "padding": "10px 10px"
+          },
+          "children": [
+            {
+              "elmType": "div",
+              "style": {
+                "margin-right": "10px"
+              },
+              "children": [
+                {
+                  "elmType": "img",
+                  "attributes": {
+                    "src": "= @currentWeb + '/_layouts/15/userphoto.aspx?size=L&accountname='+[$Author.email]+'&UA=0&size=HR48x48'",
+                    "title": "[$Author.email]"
+                  },
+                  "style": {
+                    "border": "1px solid #808080",
+                    "border-radius": "50%",
+                    "left": "50%",
+                    "width": "48px",
+                    "height": "48px",
+                    "display": "flex"
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "elmType": "div",
+          "style": {
+            "box-sizing": "border-box",
+            "padding": "0 20px",
+            "border-left": "3px solid blue"
+          },
+          "children": [
+            {
+              "elmType": "div",
+              "style": {
+                "flex": " 1 0 300px"
+              },
+              "children": [
+                {
+                  "elmType": "div",
+                  "style": {},
+                  "children": [
+                    {
+                      "elmType": "div",
+                      "style": {
+                        "display": "flex",
+                        "flex-direction": "row"
+                      },
+                      "children": [
+                        {
+                          "elmType": "div",
+                          "attributes": {
+                            "class": "ms-font-m"
+                          },
+                          "style": {
+                            "line-height": "1.5em",
+                            "margin": "8px 0",
+                            "font-weight": "bold"
+                          },
+                          "txtContent": "=[$Author.title]+', '",
+                          "children": []
+                        },
+                        {
+                          "elmType": "div",
+                          "attributes": {
+                            "class": "ms-font-m"
+                          },
+                          "style": {
+                            "line-height": "1.5em",
+                            "margin": "8px 0",
+                            "font-weight": "bold"
+                          },
+                          "txtContent": "=toLocaleString([$DateCreated])"
+                        },
+                        {
+                          "elmType": "div",
+                          "attributes": {
+                            "class": "ms-font-l ms-fontWeight-bold"
+                          },
+                          "style": {
+                            "color": "white",
+                            "background-color": "red",
+                            "width": "25px",
+                            "height": "25px",
+                            "text-align": "center",
+                            "border-radius": "50%",
+                            "margin": " 5px 15px"
+                          },
+                          "txtContent": "!"
+                        }
+                      ]
+                    },
+                    {
+                      "elmType": "div",
+                      "attributes": {
+                        "class": "ms-font-xxl"
+                      },
+                      "style": {
+                        "line-height": "1.5em",
+                        "color": "#0077FF",
+                        "margin": "8px 0"
+                      },
+                      "txtContent": "[$Title]"
+                    },
+                    {
+                      "elmType": "div",
+                      "attributes": {
+                        "class": "ms-font-m"
+                      },
+                      "style": {
+                        "line-height": "1.5em",
+                        "margin": "8px 0"
+                      },
+                      "children": [
+                        {
+                          "elmType": "div",
+                          "style": {
+                            "display": "inline-block"
+                          },
+                          "children": [
+                            {
+                              "elmType": "span",
+                              "attributes": {
+                                "class": "ms-fontWeight-semibold"
+                              },
+                              "style": {
+                                "margin-right": "18px"
+                              },
+                              "txtContent": "[$Message]"
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                        "elmType":"a","iconName": "Mail",
+                        "class": "sp-field-quickActions","href": "[$DeepLink]"
+
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  }

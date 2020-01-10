@@ -1,0 +1,19 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/spfx-build/config.2.0.schema.json",
+  "version": "2.0",
+  "bundles": {
+    "team-presence-web-part-web-part": {
+      "components": [
+        {
+          "entrypoint": "./lib/webparts/teamPresenceWebPart/TeamPresenceWebPartWebPart.js",
+          "manifest": "./src/webparts/teamPresenceWebPart/TeamPresenceWebPartWebPart.manifest.json"
+        }
+      ]
+    }
+  },
+  "externals": {},
+  "localizedResources": {
+    "TeamPresenceWebPartWebPartStrings": "lib/webparts/teamPresenceWebPart/loc/{locale}.js",
+    "ControlStrings": "node_modules/@pnp/spfx-controls-react/lib/loc/{locale}.js"
+  }
+}

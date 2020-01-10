@@ -1,0 +1,22 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/spfx-build/package-solution.schema.json",
+  "solution": {
+    "name": "react-team-presence-client-side-solution",
+    "id": "019cd428-b7cc-4b6f-8ab7-7b604c50b8d0",
+    "version": "1.0.0.0",
+    "includeClientSideAssets": true,
+    "skipFeatureDeployment": true,
+    "isDomainIsolated": false,
+    "webApiPermissionRequests":[{
+      "resource":"Microsoft Graph","scope":"Presence.Read.All"
+    },{
+      "resource": "Microsoft Graph",
+      "scope": "Group.Read.All"
+    }
+  ]
+  },
+  "paths": {
+    "zippedPackage": "solution/react-team-presence.sppkg"
+  }
+ 
+}

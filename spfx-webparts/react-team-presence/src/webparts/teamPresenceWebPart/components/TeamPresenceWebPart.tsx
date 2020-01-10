@@ -49,10 +49,10 @@ export default class TeamPresenceWebPart extends React.Component<ITeamPresenceWe
   public render(): React.ReactElement<ITeamPresenceWebPartProps> {
     return (
       <div className={ styles.teamPresenceWebPart }>
-        
+        <div className={styles.title}>
         <WebPartTitle displayMode={this.props.displayMode}
           title={this.props.title}
-          updateProperty={this.props.updateProperty} />
+          updateProperty={this.props.updateProperty}/></div>
         <div className={ styles.container }>
           <div className={ styles.row }>
               {
@@ -90,7 +90,7 @@ export default class TeamPresenceWebPart extends React.Component<ITeamPresenceWe
                 secondaryText: val.jobTitle,
                 id: val.id
 
-            }
+            };
             
             persons.push(person);
             
@@ -121,19 +121,19 @@ export default class TeamPresenceWebPart extends React.Component<ITeamPresenceWe
                       p.presence = PersonaPresence.away;
                       break;
                       case "Busy":
-                        p.presence = PersonaPresence.busy
+                        p.presence = PersonaPresence.busy;
                         break;
                         case "BusyIdle":
-                        p.presence = PersonaPresence.busy
+                        p.presence = PersonaPresence.busy;
                         break;
                         case "DoNotDisturb":
-                        p.presence = PersonaPresence.dnd
+                        p.presence = PersonaPresence.dnd;
                         break;
                         case "Offline":
-                        p.presence = PersonaPresence.offline
+                        p.presence = PersonaPresence.offline;
                         break;
                         default:
-                          p.presence = PersonaPresence.none
+                          p.presence = PersonaPresence.none;
                           break;
               }
               p.activity = val.activity;
@@ -142,7 +142,7 @@ export default class TeamPresenceWebPart extends React.Component<ITeamPresenceWe
               console.log(persons);
             this.setState({
               persons: persons
-            })
+            });
         });
       });
     

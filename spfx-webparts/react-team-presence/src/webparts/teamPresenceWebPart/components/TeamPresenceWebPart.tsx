@@ -36,8 +36,8 @@ export default class TeamPresenceWebPart extends React.Component<ITeamPresenceWe
  
 
   public componentDidMount(): void{
-    console.log("Group ID:"+this.groupID);
-    if(this.groupID.length > 0)
+    
+    if(this.groupID != null && this.groupID.length > 0)
     {    
       this._loadMembersAndPresence(this.groupID);
     }
@@ -100,7 +100,8 @@ export default class TeamPresenceWebPart extends React.Component<ITeamPresenceWe
           console.log(ids);
         
           body = body.replace("{0}",ids.toString());
-          console.log(body);client.api('https://graph.microsoft.com/beta/communications/getPresencesByUserId').post(body, (error,presenceResponse: any, rawResponse?:any) => {
+          console.log(body);
+          client.api('https://graph.microsoft.com/beta/communications/getPresencesByUserId').post(body, (error,presenceResponse: any, rawResponse?:any) => {
             console.log(presenceResponse);
             presenceResponse.value.map((val: any) => {
               console.log(val.id);  

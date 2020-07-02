@@ -23,7 +23,7 @@ Disconnect-PnPOnline -Connection $connection
 
 foreach($site in $sites)
 {
-    $connection = Connect-PnPOnline -Url $site -Tenant $tenant -ClientId $clientID -Thumbprint $certificateThumbprint -ReturnConnection
+    $connection = Connect-PnPOnline -Url $site.Url -Tenant $tenant -ClientId $clientID -Thumbprint $certificateThumbprint -ReturnConnection
     Apply-PnPProvisioningTemplate -InputInstance $template -Connection $connection
    
 }

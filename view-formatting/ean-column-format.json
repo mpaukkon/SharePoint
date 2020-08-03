@@ -7,16 +7,6 @@
     "width": "128px",
     "height": "100px"
   },
-  "children": [
-    {
-      "elmType": "a",
-      "attributes": {
-        "href": "='https://www.google.com/maps/place/' + @currentField + '/'",
-        "target": "_blank"
-      },
-      "style": {
-        "height": "100%"
-      },
       "children": [
         {
           "elmType": "img",
@@ -25,6 +15,4 @@
           }
         }
       ]
-    }
-  ]
-}
+ }

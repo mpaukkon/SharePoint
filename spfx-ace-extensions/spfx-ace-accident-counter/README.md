@@ -1,10 +1,12 @@
-# spfx-ace-accident-counter
+# Accident Counter Solution
 
 ## Summary
 
-Short summary on functionality and used technologies.
+This Adaptive Card Extension displays number of days without accidents. QuickView displays also number of accidents during this month and this year.
+Editor can customize the title of the ACE card, card description and icon.
 
-[picture of the solution in action, if possible]
+![ACE Card](./Assets/card1.png)
+![Quick View](./Assets/card2.png)
 
 ## Used SharePoint Framework Version
 

@@ -19,21 +19,21 @@ declare module "@pnp/sp/webs" {
 extendFactory(Web,
     {
         getAccidents: async function (this: IWeb): Promise<Accident>{
-            const accidents = await this.lists.getByTitle("Accidents").items.orderBy("AccidentDate",false)<{AccidentDate: Date}[]>();
+            const today = new Date();
+            console.log(today.toISOString());
+            const accidents = await this.lists.getByTitle("Accidents").items.filter("AccidentDate lt datetime'"+today.toISOString()+"'").orderBy("AccidentDate",false)<{AccidentDate: Date}[]>();
             console.log(accidents);
             console.log(accidents[0]);
-            const today = new Date();
-            let month = today.getMonth() +1 ;
-            console.log(moment.months());
+            let month = today.getMonth() +1; 
             let year = today.getFullYear();
-            console.log(month);
-            console.log(year);
+            let date = new Date(Date.now());;
             let daysWithoutAccidents: number = Math.ceil((Date.now()-new Date(accidents[0].AccidentDate.toString()).getTime())/(1000*3600*24));
+
             console.log(accidents[0].AccidentDate);
             let accidentsThisMonth: number  = 0;
             let accidentsThisYear: number = 0;
             accidents.forEach(element => {
-                if(moment(element.AccidentDate).isSame("2022-02-01","month"))
+                if(moment(element.AccidentDate).isSame(Date.now(),"month"))
                 {
                     console.log(element.AccidentDate);
                     accidentsThisMonth++;

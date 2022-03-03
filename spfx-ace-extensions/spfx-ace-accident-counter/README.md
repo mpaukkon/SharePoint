@@ -32,7 +32,7 @@ Data for the solution is hosted on a SharePoint list, which is added on SharePoi
 
 Solution|Author(s)
 --------|---------
-spfx-ace-accident-counter | Matti Paukkonen, Tahto Group, ![@mpaukkon](https://twitter.com/mpaukkon)
+spfx-ace-accident-counter | Matti Paukkonen, [Tahto Group](https://tahtogroup.fi), [@mpaukkon](https://twitter.com/mpaukkon)
 
 ## Version history
 

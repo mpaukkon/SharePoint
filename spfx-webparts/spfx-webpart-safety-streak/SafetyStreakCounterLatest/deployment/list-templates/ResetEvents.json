@@ -1,0 +1,29 @@
+{
+  "SchemaVersion": "1.0",
+  "Title": "ResetEvents",
+  "Description": "Derived KPI reset events for the Safety Streak Counter",
+  "BaseTemplate": 100,
+  "ContentTypesEnabled": false,
+  "Fields": [
+    {
+      "ID": "{A0A57C2C-2F51-4EF8-9D3A-9F3C3B0B8B21}",
+      "Name": "ResetEffectiveDate",
+      "Title": "ResetEffectiveDate",
+      "Type": "DateTime",
+      "Required": true,
+      "Format": "DateTime",
+      "FriendlyDisplayFormat": "Disabled",
+      "Group": "Safety Streak",
+      "Indexed": true
+    }
+  ],
+  "Views": [
+    {
+      "Title": "All Items",
+      "DefaultView": true,
+      "RowLimit": 30,
+      "Query": "<OrderBy><FieldRef Name='ResetEffectiveDate' Ascending='FALSE' /></OrderBy>",
+      "ViewFields": ["LinkTitle", "ResetEffectiveDate"]
+    }
+  ]
+}

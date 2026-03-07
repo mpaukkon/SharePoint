@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<pnp:Provisioning xmlns:pnp="http://schemas.dev.office.com/PnP/2022/03/ProvisioningSchema">
+  <pnp:Preferences Author="SafetyStreak" />
+  <pnp:Templates>
+    <pnp:ProvisioningTemplate ID="SafetyStreak_Incidents" Version="1.0">
+      <pnp:Lists>
+        <pnp:ListInstance
+          Title="Incidents"
+          Description="Incident intake list (Phase 2)"
+          TemplateType="100"
+          Url="Lists/Incidents"
+          EnableVersioning="true"
+          EnableMinorVersions="false"
+          OnQuickLaunch="true">
+          <pnp:Fields>
+            <Field
+              ID="{B645E266-9E38-4F9B-9F55-0F6DB24F2B1A}"
+              Name="IncidentDateTime"
+              DisplayName="IncidentDateTime"
+              Type="DateTime"
+              Required="TRUE"
+              Format="DateTime"
+              FriendlyDisplayFormat="Disabled"
+              Group="Safety Streak" />
+            <Field
+              ID="{D0F7F7B2-0F84-47EF-8B6E-7E0B4AE6AF1B}"
+              Name="IncidentTitle"
+              DisplayName="IncidentTitle"
+              Type="Text"
+              Required="FALSE"
+              MaxLength="255"
+              Group="Safety Streak" />
+          </pnp:Fields>
+          <pnp:FieldRefs>
+            <pnp:FieldRef ID="{B645E266-9E38-4F9B-9F55-0F6DB24F2B1A}" Name="IncidentDateTime" />
+            <pnp:FieldRef ID="{D0F7F7B2-0F84-47EF-8B6E-7E0B4AE6AF1B}" Name="IncidentTitle" />
+          </pnp:FieldRefs>
+          <pnp:Views>
+            <View
+              Title="All Items"
+              DefaultView="TRUE"
+              Type="HTML"
+              RowLimit="30"
+              Query="<OrderBy><FieldRef Name='IncidentDateTime' Ascending='FALSE' /></OrderBy>">
+              <ViewFields>
+                <FieldRef Name="LinkTitle" />
+                <FieldRef Name="IncidentTitle" />
+                <FieldRef Name="IncidentDateTime" />
+              </ViewFields>
+            </View>
+          </pnp:Views>
+        </pnp:ListInstance>
+      </pnp:Lists>
+    </pnp:ProvisioningTemplate>
+  </pnp:Templates>
+</pnp:Provisioning>

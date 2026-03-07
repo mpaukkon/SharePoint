@@ -1,0 +1,22 @@
+{
+  "@microsoft/generator-sharepoint": {
+    "whichFolder": "subdir",
+    "solutionName": "SafetyStreakCounterLatest",
+    "solutionShortDescription": "Safety Streak Counter",
+    "environment": "spo",
+    "packageManager": "npm",
+    "skipFeatureDeployment": true,
+    "useGulp": false,
+    "componentType": "webpart",
+    "template": "react",
+    "componentName": "SafetyStreakCounter",
+    "plusBeta": false,
+    "isCreatingSolution": true,
+    "nodeVersion": "20.20.0",
+    "sdksVersions": {},
+    "version": "1.22.2",
+    "libraryName": "safety-streak-counter-latest",
+    "libraryId": "e34f8544-6ad3-4fb5-babb-631659755228",
+    "isDomainIsolated": false
+  }
+}

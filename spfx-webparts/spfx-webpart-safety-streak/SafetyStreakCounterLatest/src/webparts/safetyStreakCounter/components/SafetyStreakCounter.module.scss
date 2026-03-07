@@ -1,0 +1,70 @@
+@import '~@fluentui/react/dist/sass/References.scss';
+
+.safetyStreakCounter {
+  font-family: $ms-font-family-fallbacks;
+  color: "[theme:bodyText, default: #323130]";
+  padding: 12px;
+}
+
+.teams {
+  font-family: $ms-font-family-fallbacks;
+}
+
+.dark {
+  color: "[theme:bodyText, default: #ffffff]";
+}
+
+.card {
+  padding: 24px;
+  background: "[theme:bodyBackground, default: #ffffff]";
+  border-radius: 12px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+}
+
+.title {
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 12px;
+}
+
+.caption {
+  font-size: 14px;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: "[theme:bodySubtext, default: #605e5c]";
+}
+
+.primaryValue {
+  font-size: 64px;
+  font-weight: 700;
+  line-height: 1;
+  color: "[theme:themePrimary, default: #0078d4]";
+}
+
+.secondaryValue {
+  margin-top: 8px;
+  font-size: 16px;
+  color: "[theme:bodySubtext, default: #605e5c]";
+}
+
+.lastUpdated {
+  margin-top: 12px;
+  font-size: 12px;
+  color: "[theme:bodySubtext, default: #8a8886]";
+}
+
+.layoutRitual {
+  text-align: center;
+}
+
+.layoutContext {
+  display: grid;
+  gap: 8px;
+}
+
+.layoutDisplay {
+  text-align: center;
+  background: "[theme:neutralLighter, default: #f3f2f1]";
+  padding: 12px;
+  border-radius: 8px;
+}

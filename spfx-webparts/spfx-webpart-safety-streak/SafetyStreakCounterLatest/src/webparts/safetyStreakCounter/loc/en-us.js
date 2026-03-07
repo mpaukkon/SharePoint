@@ -1,0 +1,30 @@
+define([], function() {
+  return {
+    "PropertyPaneDescription": "Configure the Safety Streak Counter",
+    "BasicGroupName": "Counter Settings",
+    "ResetEventsListLabel": "ResetEvents list name",
+    "LayoutLabel": "Layout style",
+    "LayoutRitualLabel": "Ritual",
+    "LayoutContextLabel": "Context",
+    "LayoutDisplayLabel": "Display",
+    "TitleOverrideLabel": "Title override",
+    "ShowLastUpdatedLabel": "Show last updated timestamp",
+  "DefaultTitle": "Safety Streak",
+  "Caption": "Days since last qualifying safety event",
+  "UpdatedLabel": "Updated",
+  "LoadingMessage": "Loading...",
+  "NoListSelectedMessage": "Select a ResetEvents list to continue.",
+  "NoDataMessage": "No reset events found.",
+  "NoAccessMessage": "Access to the ResetEvents list is not available.",
+  "ErrorMessage": "Unable to load Safety Streak Counter data.",
+    "AppLocalEnvironmentSharePoint": "The app is running on your local environment as SharePoint web part",
+    "AppLocalEnvironmentTeams": "The app is running on your local environment as Microsoft Teams app",
+    "AppLocalEnvironmentOffice": "The app is running on your local environment in Office",
+    "AppLocalEnvironmentOutlook": "The app is running on your local environment in Outlook",
+    "AppSharePointEnvironment": "The app is running on SharePoint page",
+    "AppTeamsTabEnvironment": "The app is running in Microsoft Teams",
+    "AppOfficeEnvironment": "The app is running in office.com",
+    "AppOutlookEnvironment": "The app is running in Outlook",
+    "UnknownEnvironment": "The app is running in an unknown environment"
+  }
+});

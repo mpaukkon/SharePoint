@@ -1,0 +1,13 @@
+{
+  "@microsoft/generator-sharepoint": {
+    "solutionName": "SafetyStreakCounter",
+    "environment": "spo",
+    "packageManager": "npm",
+    "skipFeatureDeployment": true,
+    "componentType": "webpart",
+    "framework": "react",
+    "componentName": "SafetyStreakCounter",
+    "isCreatingSolution": true,
+    "whichFolder": "subdir"
+  }
+}

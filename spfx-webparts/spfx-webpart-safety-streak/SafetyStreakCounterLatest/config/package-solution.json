@@ -1,0 +1,40 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/spfx-build/package-solution.schema.json",
+  "solution": {
+    "name": "safety-streak-counter-latest-client-side-solution",
+    "id": "e34f8544-6ad3-4fb5-babb-631659755228",
+    "version": "1.0.0.0",
+    "includeClientSideAssets": true,
+    "skipFeatureDeployment": true,
+    "isDomainIsolated": false,
+    "developer": {
+      "name": "",
+      "websiteUrl": "",
+      "privacyUrl": "",
+      "termsOfUseUrl": "",
+      "mpnId": "Undefined-1.22.2"
+    },
+    "metadata": {
+      "shortDescription": {
+        "default": "Safety Streak Counter"
+      },
+      "longDescription": {
+        "default": "Safety Streak Counter"
+      },
+      "screenshotPaths": [],
+      "videoUrl": "",
+      "categories": []
+    },
+    "features": [
+      {
+        "title": "safety-streak-counter-latest Feature",
+        "description": "The feature that activates elements of the safety-streak-counter-latest solution.",
+        "id": "fe39ec59-bcf7-4373-be4a-bc2c3663c745",
+        "version": "1.0.0.0"
+      }
+    ]
+  },
+  "paths": {
+    "zippedPackage": "solution/safety-streak-counter-latest.sppkg"
+  }
+}

@@ -1,0 +1,30 @@
+define([], function() {
+  return {
+    "PropertyPaneDescription": "Määritä turvallisuusjakson laskuri",
+    "BasicGroupName": "Laskurin asetukset",
+    "ResetEventsListLabel": "ResetEvents-luettelo",
+    "LayoutLabel": "Asettelu",
+    "LayoutRitualLabel": "Rituaali",
+    "LayoutContextLabel": "Konteksti",
+    "LayoutDisplayLabel": "Näyttö",
+    "TitleOverrideLabel": "Otsikon korvaus",
+    "ShowLastUpdatedLabel": "Näytä viimeisin päivitys",
+    "DefaultTitle": "Turvallisuusjakso",
+    "Caption": "Päiviä viimeisimmästä hyväksytystä turvallisuustapahtumasta",
+    "UpdatedLabel": "Päivitetty",
+    "LoadingMessage": "Ladataan...",
+    "NoListSelectedMessage": "Valitse ResetEvents-luettelo jatkaaksesi.",
+    "NoDataMessage": "ResetEvents-tietoja ei löytynyt.",
+    "NoAccessMessage": "Pääsy ResetEvents-luetteloon ei ole käytettävissä.",
+    "ErrorMessage": "Turvallisuusjakson laskurin tietoja ei voitu ladata.",
+    "AppLocalEnvironmentSharePoint": "Sovellus toimii paikallisessa SharePoint-ympäristössä",
+    "AppLocalEnvironmentTeams": "Sovellus toimii paikallisessa Microsoft Teams -ympäristössä",
+    "AppLocalEnvironmentOffice": "Sovellus toimii paikallisessa Office-ympäristössä",
+    "AppLocalEnvironmentOutlook": "Sovellus toimii paikallisessa Outlook-ympäristössä",
+    "AppSharePointEnvironment": "Sovellus toimii SharePoint-sivulla",
+    "AppTeamsTabEnvironment": "Sovellus toimii Microsoft Teamsissa",
+    "AppOfficeEnvironment": "Sovellus toimii office.comissa",
+    "AppOutlookEnvironment": "Sovellus toimii Outlookissa",
+    "UnknownEnvironment": "Sovellus toimii tuntemattomassa ympäristössä"
+  }
+});

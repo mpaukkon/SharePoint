@@ -1,0 +1,37 @@
+{
+  "SchemaVersion": "1.0",
+  "Title": "Incidents",
+  "Description": "Incident intake list (Phase 2)",
+  "BaseTemplate": 100,
+  "ContentTypesEnabled": false,
+  "Fields": [
+    {
+      "ID": "{B645E266-9E38-4F9B-9F55-0F6DB24F2B1A}",
+      "Name": "IncidentDateTime",
+      "Title": "IncidentDateTime",
+      "Type": "DateTime",
+      "Required": true,
+      "Format": "DateTime",
+      "FriendlyDisplayFormat": "Disabled",
+      "Group": "Safety Streak"
+    },
+    {
+      "ID": "{D0F7F7B2-0F84-47EF-8B6E-7E0B4AE6AF1B}",
+      "Name": "IncidentTitle",
+      "Title": "IncidentTitle",
+      "Type": "Text",
+      "Required": false,
+      "MaxLength": 255,
+      "Group": "Safety Streak"
+    }
+  ],
+  "Views": [
+    {
+      "Title": "All Items",
+      "DefaultView": true,
+      "RowLimit": 30,
+      "Query": "<OrderBy><FieldRef Name='IncidentDateTime' Ascending='FALSE' /></OrderBy>",
+      "ViewFields": ["LinkTitle", "IncidentTitle", "IncidentDateTime"]
+    }
+  ]
+}

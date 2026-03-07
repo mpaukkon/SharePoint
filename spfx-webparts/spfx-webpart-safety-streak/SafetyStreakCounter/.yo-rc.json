@@ -1,0 +1,16 @@
+{
+  "@microsoft/generator-sharepoint": {
+    "version": "1.11.0",
+    "libraryName": "safety-streak-counter",
+    "libraryId": "67dc5a37-8844-47a3-9651-9836f47178d5",
+    "environment": "spo",
+    "packageManager": "npm",
+    "solutionName": "SafetyStreakCounter",
+    "skipFeatureDeployment": true,
+    "componentType": "webpart",
+    "framework": "react",
+    "componentName": "SafetyStreakCounter",
+    "isCreatingSolution": true,
+    "isDomainIsolated": false
+  }
+}

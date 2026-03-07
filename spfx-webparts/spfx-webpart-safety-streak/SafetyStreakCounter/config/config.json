@@ -1,0 +1,18 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/spfx-build/config.2.0.schema.json",
+  "version": "2.0",
+  "bundles": {
+    "safety-streak-counter-web-part": {
+      "components": [
+        {
+          "entrypoint": "./lib/webparts/safetyStreakCounter/SafetyStreakCounterWebPart.js",
+          "manifest": "./src/webparts/safetyStreakCounter/SafetyStreakCounterWebPart.manifest.json"
+        }
+      ]
+    }
+  },
+  "externals": {},
+  "localizedResources": {
+    "SafetyStreakCounterWebPartStrings": "lib/webparts/safetyStreakCounter/loc/{locale}.js"
+  }
+}

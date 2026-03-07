@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<pnp:Provisioning xmlns:pnp="http://schemas.dev.office.com/PnP/2022/03/ProvisioningSchema">
+  <pnp:Preferences Author="SafetyStreak" />
+  <pnp:Templates>
+    <pnp:ProvisioningTemplate ID="SafetyStreak_ResetEvents" Version="1.0">
+      <pnp:Lists>
+        <pnp:ListInstance
+          Title="ResetEvents"
+          Description="Derived KPI reset events for the Safety Streak Counter"
+          TemplateType="100"
+          Url="Lists/ResetEvents"
+          EnableVersioning="true"
+          EnableMinorVersions="false"
+          OnQuickLaunch="true">
+          <pnp:Fields>
+            <Field
+              ID="{A0A57C2C-2F51-4EF8-9D3A-9F3C3B0B8B21}"
+              Name="ResetEffectiveDate"
+              DisplayName="ResetEffectiveDate"
+              Type="DateTime"
+              Required="TRUE"
+              Format="DateTime"
+              FriendlyDisplayFormat="Disabled"
+              Group="Safety Streak"
+              Indexed="TRUE" />
+          </pnp:Fields>
+          <pnp:FieldRefs>
+            <pnp:FieldRef ID="{A0A57C2C-2F51-4EF8-9D3A-9F3C3B0B8B21}" Name="ResetEffectiveDate" />
+          </pnp:FieldRefs>
+          <pnp:Views>
+            <View
+              Title="All Items"
+              DefaultView="TRUE"
+              Type="HTML"
+              RowLimit="30"
+              Query="<OrderBy><FieldRef Name='ResetEffectiveDate' Ascending='FALSE' /></OrderBy>">
+              <ViewFields>
+                <FieldRef Name="LinkTitle" />
+                <FieldRef Name="ResetEffectiveDate" />
+              </ViewFields>
+            </View>
+          </pnp:Views>
+        </pnp:ListInstance>
+      </pnp:Lists>
+    </pnp:ProvisioningTemplate>
+  </pnp:Templates>
+</pnp:Provisioning>

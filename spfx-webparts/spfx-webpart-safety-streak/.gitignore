@@ -1,0 +1,58 @@
+# Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# Dependency directories
+node_modules/
+
+# Build output
+/dist/
+/lib/
+/lib-commonjs/
+/lib-esm/
+/lib-dts/
+/solution/
+/temp/
+/release/
+/coverage/
+/jest-output/
+*.sppkg
+.heft/
+
+# TypeScript build info
+*.tsbuildinfo
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# IDEs and editors
+.vscode/
+.vs/
+.idea/
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+
+# Visual Studio files
+.ntvs_analysis.dat
+bin/
+obj/
+
+# Environment files
+.env
+.env.*
+
+# Generated SPFx code
+*.resx.ts
+*.scss.ts
+
+# Misc
+*.pid
+*.seed
+*.pid.lock
